@@ -1,7 +1,7 @@
 # PDF Tools — Internal Streamlit App
 
-Two tools for your team:
-- **Split PDF** — split a mail-merge PDF into individually named files using an Excel recipient list
+Two functions:
+- **Split PDF** — split a mail-merge PDF (convert from word document) into individually named files using an Excel recipient list ( name order needs to match the document name order)
 - **Merge PDFs** — merge PDFs from multiple folders (letters, plans, notices, etc.) matched by filename
 
 ---

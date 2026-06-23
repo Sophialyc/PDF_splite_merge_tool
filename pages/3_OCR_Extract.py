@@ -7,7 +7,7 @@ import os
 
 st.set_page_config(page_title="OCR Extract", page_icon="🔍", layout="wide")
 
-st.title("🔍 OCR Text Extractor")
+st.title(" OCR Text Extractor")
 st.markdown("Convert scanned PDFs or images into searchable text.")
 
 with st.expander("⚙️ Settings", expanded=False):

@@ -162,7 +162,7 @@ if st.session_state.get("ocr_full_text"):
     left_col, right_col = st.columns(2, gap="medium")
 
     with left_col:
-        st.markdown(f"**📄 Document — page {current_page} of {total_pages}**")
+        st.markdown(f"** Document — page {current_page} of {total_pages}**")
         if is_pdf:
             img_bytes = render_pdf_page_as_image(file_bytes, current_page - 1, dpi=150)
             st.image(img_bytes, use_container_width=True)
@@ -170,7 +170,7 @@ if st.session_state.get("ocr_full_text"):
             st.image(file_bytes, use_container_width=True)
 
     with right_col:
-        st.markdown(f"**📝 Extracted text — page {current_page}**")
+        st.markdown(f"** Extracted text — page {current_page}**")
         st.text_area(
             "extracted",
             value=page_texts[current_page - 1],

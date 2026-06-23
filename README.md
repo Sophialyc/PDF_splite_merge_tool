@@ -53,3 +53,10 @@ Not recommended if documents contain sensitive recipient data.
 - Output is always a ZIP file — no files are written to the server's disk
 - The split tool upgraded from `PyPDF2` to `pypdf` (the maintained successor)
 - The merge tool supports any number of groups, matched by filename stem
+
+## Dealing with sensitive information?
+- Documents are never stored. They exist in memory only for the duration of your session, then disappear.
+- Nothing is written to disk, no database, no file storage.
+- Streamlit Community Cloud does not log/retain file contents
+- However, files do pass through Snowflake's servers (who acquired Streamlit) in transit.
+- You can run it locally to  on your own machine with 'streamlit run app.py' to avoid sensitive information leak.

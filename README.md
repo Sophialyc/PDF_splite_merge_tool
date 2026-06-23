@@ -56,7 +56,6 @@ Not recommended if documents contain sensitive recipient data.
 
 ## Dealing with sensitive information?
 - Documents are never stored. They exist in memory only for the duration of your session, then disappear.
-- Nothing is written to disk, no database, no file storage.
-- Streamlit Community Cloud does not log/retain file contents
-- However, files do pass through Snowflake's servers (who acquired Streamlit) in transit.
-- You can run it locally to  on your own machine with 'streamlit run app.py' to avoid sensitive information leak.
+- Nothing is written to disk, no database, no file storage. Streamlit Community Cloud does not log/retain file contents
+- However, files do pass through Snowflake's servers (who acquired Streamlit) in transit. --> if you're processing documents that are legally privileged, covered by GDPR data processing agreements, seek further guidance
+- You can run it locally to on your own machine with 'streamlit run app.py' to avoid sensitive information leak.
